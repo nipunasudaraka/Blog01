@@ -1,28 +1,22 @@
 <template>
-  <div class="home-page">
-    <!-- Hero Section -->
-    <div class="hero-section">
-      <!-- Your hero section content goes here -->
-      <div class="title"><h3>"Adventurous Trails: Forge Your Path."</h3></div>
-    </div>
-
-    <!-- Blog Post Cards -->
-    <div class="blog-post-cards">
-      <div class="row justify-center">
-        <div v-for="(post, index) in blogPosts" :key="index" class="col-md-5">
-          <div class="blog-post-card">
-            <img :src="post.imageSrc" alt="Post Image" class="post-image" />
-            <div class="post-content">
-              <h2 class="post-title">{{ post.title }}</h2>
-              <p class="post-description">{{ post.description }}</p>
-            </div>
+  <Div class="title1">
+    <h3>-Bolg posts-</h3>
+  </Div>
+  <!-- Blog Post Cards -->
+  <div class="blog-post-cards">
+    <div class="row justify-center">
+      <div v-for="(post, index) in blogPosts" :key="index" class="col-md-5">
+        <div class="blog-post-card">
+          <img :src="post.imageSrc" alt="Post Image" class="post-image" />
+          <div class="post-content">
+            <h2 class="post-title">{{ post.title }}</h2>
+            <p class="post-description">{{ post.description }}</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-
 <script>
 export default {
   data() {
@@ -58,9 +52,7 @@ export default {
   },
 };
 </script>
-
 <style scoped>
-/* Scoped CSS for Home.vue */
 * {
   margin: 0;
   padding: 0;
@@ -68,31 +60,7 @@ export default {
 body {
   background-color: #b71818 !important;
 }
-/* Style for the entire home page */
-.home-page {
-  /* Add styles for the entire home page here */
-}
 
-/* Style for the hero section */
-.hero-section {
-  /* Add styles for the hero section here */
-  background-image: url("https://images.hdqwalls.com/wallpapers/guy-on-travel-adventure-5k-mf.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Style for the title */
-.title {
-  text-align: center;
-  color: white;
-  font-size: 24px;
-}
-
-/* Style for the blog post cards */
 .blog-post-cards {
   /* Add styles for the blog post cards container here */
   margin-top: 20px;
@@ -139,5 +107,9 @@ body {
 .post-description {
   margin-top: 5px;
   font-size: 14px;
+}
+.title1 {
+  text-align: center;
+  margin-top: 20px;
 }
 </style>

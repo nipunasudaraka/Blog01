@@ -1,5 +1,3 @@
-<template>
-  <h1>This is the about page</h1>
-</template>
+<template></template>
 
 <script></script>
